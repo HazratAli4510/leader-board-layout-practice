@@ -88,6 +88,11 @@ section#top{
 section#top .container{
     background-color: white;
     padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 section#top .container .players{
     display: grid;
@@ -107,15 +112,43 @@ section#top .container .player span{
     font-size: 500;
 }
 hr{
-    margin-top: 20px;
+    margin:20px 0;
     border-color:#D1D1D1 ;
 }
 
 /* ==========================================================================
    Header Section-Top Blog
    ========================================================================== */
-
-
+section#top .container .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 31px;
+    grid-row-gap: 26px;
+    padding-bottom: 10px;
+}
+section#top .container .blogs .blog img{
+    margin-right: 1rem;
+}
+section#top .container .blogs .blog h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 6px 0;
+    width: 90%;
+}
+section#top .container .blogs .blog span{
+    color: #9F9F9F;
+    font-weight: 500;
+    font-size: 16px;
+}
+section#top .container .blogs .blog a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+section#top .container .blogs .blog a:hover{
+    text-decoration: underline;
+}
 
 
 
