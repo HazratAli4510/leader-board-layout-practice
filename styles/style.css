@@ -39,6 +39,7 @@ body{
     color: var(--primary-color);
     font-size: 24px;
     font-weight: 500;
+    text-align: center;
 }
 /* ==========================================================================
    Colors
@@ -56,16 +57,17 @@ nav{
     position: sticky;
     top: 0;
 }
+nav .logo{
+    cursor: pointer;
+}
 nav .logo img{
     padding: 0.8rem 0;
-    cursor: pointer;
 }
 nav .logo span{
     font-size: 24px;
     font-weight: 500;
     color: white;
     margin-left: 0.8rem;
-    cursor: pointer;
 }
 nav .main-menu a{
     text-decoration: none;
@@ -103,6 +105,7 @@ section#top .container .players{
 section#top .container .player{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 section#top .container .player img{
     margin-right: 16px;
@@ -125,6 +128,9 @@ section#top .container .blogs{
     margin-top: 31px;
     grid-row-gap: 26px;
     padding-bottom: 10px;
+}
+section#top .container .blogs .blog {
+    cursor: pointer;
 }
 section#top .container .blogs .blog img{
     margin-right: 1rem;
@@ -151,15 +157,71 @@ section#top .container .blogs .blog a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
-   Section comment block
+   Latest Course
    ========================================================================== */
+#latestCourses{
+    margin:21px 0 ;
+}
+#latestCourses .container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#latestCourses .container .courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 24px;
+    margin-left: 1rem;
+}
+#latestCourses .container .course{
+    width: 252px;
+    padding: 10px;
+    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05) ;
+    cursor: pointer;
+}
+#latestCourses .container .course:hover{
+    box-shadow:  0 0 2px 0 gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#latestCourses .container .course img{
+    width: 100%;
+}
+#latestCourses .container .course h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+#latestCourses .container .course span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ED6B4F;
+    margin:7px 0;
+}
+#latestCourses .container .course .rating .fa-star{
+    color:#FFC014 ;
+    font-size: 13px;
+}
+#latestCourses .container .course .course-duration{
+    background-color: #FFE4E8;
+    padding:0 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#latestCourses .container .course .course-duration i{
+    margin-right:6px;
+    color: #FF4A60;
+}
