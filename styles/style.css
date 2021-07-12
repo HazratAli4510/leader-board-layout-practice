@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* ==========================================================================
+   Resets
+   ========================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+.container{
+    width: 870px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+body{
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+:root{
+    --primary-color: #562EFF;
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+nav{
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+}
+nav .logo img{
+    padding: 0.8rem 0;
+    cursor: pointer;
+}
+nav .logo span{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+nav .main-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 36px;
+}
+nav .main-menu img{
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
