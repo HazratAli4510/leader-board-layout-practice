@@ -2,13 +2,13 @@
    Fonts
    ========================================================================== */
 
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 /* ==========================================================================
    Resets
    ========================================================================== */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -18,65 +18,76 @@
 /* ==========================================================================
    Utility classes
    ========================================================================== */
-.container{
+.container {
     width: 870px;
     margin: 0 auto;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-.justify-between{
+
+.justify-between {
     justify-content: space-between;
 }
-.align-center{
+
+.align-center {
     align-items: center;
 }
-body{
+
+body {
     background-color: #F3F1FF;
     font-family: 'Poppins', sans-serif;
 }
-.Section-title{
+
+.Section-title {
     color: var(--primary-color);
     font-size: 24px;
     font-weight: 500;
     text-align: center;
 }
+
 /* ==========================================================================
    Colors
    ========================================================================== */
 
-:root{
+:root {
     --primary-color: #562EFF;
 }
 
 /* ==========================================================================
    Navbar
    ========================================================================== */
-nav{
+nav {
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
 }
-nav .logo{
+
+nav .logo {
     cursor: pointer;
 }
-nav .logo img{
+
+nav .logo img {
     padding: 0.8rem 0;
 }
-nav .logo span{
+
+nav .logo span {
     font-size: 24px;
     font-weight: 500;
     color: white;
     margin-left: 0.8rem;
 }
-nav .main-menu a{
+
+nav .main-menu a {
     text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 16px;
     margin-right: 36px;
 }
-nav .main-menu img{
+
+nav .main-menu img {
     padding-top: 5px;
     cursor: pointer;
 }
@@ -84,10 +95,11 @@ nav .main-menu img{
 /* ==========================================================================
    Header Section-Top Player
    ========================================================================== */
-section#top{
+section#top {
     margin-top: 36px;
 }
-section#top .container{
+
+section#top .container {
     background-color: white;
     padding: 30px;
     border-radius: 5px;
@@ -96,63 +108,74 @@ section#top .container{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-section#top .container .players{
+
+section#top .container .players {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 29px;
     padding-top: 40px;
 }
-section#top .container .player{
+
+section#top .container .player {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section#top .container .player img{
+
+section#top .container .player img {
     margin-right: 16px;
 }
-section#top .container .player span{
+
+section#top .container .player span {
     font-size: 18px;
     font-size: 500;
 }
-hr{
-    margin:20px 0;
-    border-color:#D1D1D1 ;
+
+hr {
+    margin: 20px 0;
+    border-color: #D1D1D1;
 }
 
 /* ==========================================================================
    Header Section-Top Blog
    ========================================================================== */
-section#top .container .blogs{
+section#top .container .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 31px;
     grid-row-gap: 26px;
     padding-bottom: 10px;
 }
+
 section#top .container .blogs .blog {
     cursor: pointer;
 }
-section#top .container .blogs .blog img{
+
+section#top .container .blogs .blog img {
     margin-right: 1rem;
 }
-section#top .container .blogs .blog h3{
+
+section#top .container .blogs .blog h3 {
     font-weight: 500;
     font-size: 20px;
     margin: 6px 0;
     width: 90%;
 }
-section#top .container .blogs .blog span{
+
+section#top .container .blogs .blog span {
     color: #9F9F9F;
     font-weight: 500;
     font-size: 16px;
 }
-section#top .container .blogs .blog a{
+
+section#top .container .blogs .blog a {
     font-size: 16px;
     font-weight: 400;
     color: var(--primary-color);
     text-decoration: none;
 }
-section#top .container .blogs .blog a:hover{
+
+section#top .container .blogs .blog a:hover {
     text-decoration: underline;
 }
 
@@ -160,10 +183,11 @@ section#top .container .blogs .blog a:hover{
 /* ==========================================================================
    Latest Course
    ========================================================================== */
-#latestCourses{
-    margin:21px 0 ;
+#latestCourses {
+    margin: 21px 0;
 }
-#latestCourses .container{
+
+#latestCourses .container {
     background-color: white;
     padding: 30px;
     border-radius: 5px;
@@ -172,56 +196,150 @@ section#top .container .blogs .blog a:hover{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-#latestCourses .container .courses{
+
+#latestCourses .container .courses {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 24px;
     margin-left: 1rem;
 }
-#latestCourses .container .course{
+
+#latestCourses .container .course {
     width: 252px;
     padding: 10px;
-    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05) ;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     cursor: pointer;
 }
-#latestCourses .container .course:hover{
-    box-shadow:  0 0 2px 0 gray;
+
+#latestCourses .container .course:hover {
+    box-shadow: 0 0 2px 0 gray;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-#latestCourses .container .course img{
+
+#latestCourses .container .course img {
     width: 100%;
 }
-#latestCourses .container .course h3{
+
+#latestCourses .container .course h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin-top: 15px;
 }
-#latestCourses .container .course span{
+
+#latestCourses .container .course span {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #ED6B4F;
-    margin:7px 0;
+    margin: 7px 0;
 }
-#latestCourses .container .course .rating .fa-star{
-    color:#FFC014 ;
+
+#latestCourses .container .course .rating .fa-star {
+    color: #FFC014;
     font-size: 13px;
 }
-#latestCourses .container .course .course-duration{
+
+#latestCourses .container .course .course-duration {
     background-color: #FFE4E8;
-    padding:0 10px;
+    padding: 0 10px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
-#latestCourses .container .course .course-duration i{
-    margin-right:6px;
+
+#latestCourses .container .course .course-duration i {
+    margin-right: 6px;
     color: #FF4A60;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    nav .container {
+        width: unset;
+    }
+
+    nav .container img {
+        display: none;
+    }
+
+    nav .container a {
+        padding: 1rem 0;
+        margin-right: 15px;
+    }
+
+    section#top .container {
+        padding: 0;
+        width: unset;
+    }
+
+    section#top .container .players {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 10px;
+    }
+
+    section#top .container .Section-title {
+        padding-top: 10px;
+    }
+
+    section#top .container .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    section#top .container .blogs .blog h3 {
+        width: 100%;
+    }
+
+    section#top .container .blogs .blog {
+        margin-left: 3%;
+    }
+
+    #latestCourses .container {
+        width: unset;
+    }
+
+    #latestCourses .container .courses {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    #latestCourses .container .course {
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        width: 280px;
+    }
+    #latestCourses{
+        margin-bottom: 0;
+    }
+    section#top {
+        margin-top: 0px;
+    }
+
+
+
+
+
+
+
+
 }
