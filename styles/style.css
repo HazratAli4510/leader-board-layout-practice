@@ -239,7 +239,7 @@ section#top .container .blogs .blog a:hover {
     margin: 7px 0;
 }
 
-#latestCourses .container .course .rating .fa-star {
+#latestCourses .container .course .rating .fa-star,.fa-star-half-alt {
     color: #FFC014;
     font-size: 13px;
 }
