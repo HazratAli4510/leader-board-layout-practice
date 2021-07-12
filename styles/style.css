@@ -334,12 +334,38 @@ section#top .container .blogs .blog a:hover {
     section#top {
         margin-top: 0px;
     }
-
-
-
-
-
-
-
-
 }
+@media (max-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    .container{
+        width: unset;
+    }
+    #latestCourses .container .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #latestCourses .container .course{
+        margin-top: 1rem;
+    }
+    section#top .container .blogs .blog h3{
+        width: 95%;
+        font-size: 18px;
+    }
+    nav .container{
+        justify-content: space-around;
+    }
+
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    section#top .container .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section#top .container .blogs{
+        grid-template-columns: 1fr;
+    }
+  }
+  
