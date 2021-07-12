@@ -2,9 +2,7 @@
    Fonts
    ========================================================================== */
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,500;1,400&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 /* ==========================================================================
    Resets
@@ -37,7 +35,11 @@ body{
     background-color: #F3F1FF;
     font-family: 'Poppins', sans-serif;
 }
-
+.Section-title{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 500;
+}
 /* ==========================================================================
    Colors
    ========================================================================== */
@@ -74,27 +76,57 @@ nav .main-menu a{
 }
 nav .main-menu img{
     padding-top: 5px;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==========================================================================
+   Header Section-Top Player
+   ========================================================================== */
+section#top{
+    margin-top: 36px;
+}
+section#top .container{
+    background-color: white;
+    padding: 30px;
+}
+section#top .container .players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+    padding-top: 40px;
+}
+section#top .container .player{
+    display: flex;
+    align-items: center;
+}
+section#top .container .player img{
+    margin-right: 16px;
+}
+section#top .container .player span{
+    font-size: 18px;
+    font-size: 500;
+}
+hr{
+    margin-top: 20px;
+    border-color:#D1D1D1 ;
+}
 
 /* ==========================================================================
-   Section comment block
+   Header Section-Top Blog
    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Section comment block
    ========================================================================== */
